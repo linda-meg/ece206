@@ -1,0 +1,52 @@
+# Color Bar BMP Generator
+
+A simple C++ program that generates vertical color-bar test patterns and saves them as **24-bit uncompressed BMP files**.
+
+The program prompts the user to select a resolution and automatically creates the corresponding BMP image.
+
+## Resolution Options
+
+When the program starts, the user can select:
+
+1. **720p** - 1280 x 720
+2. **1080p** - 1920 x 1080
+3. **1920p** - 3840 x 1920
+
+> **Note:** If option 3 is intended to represent standard 4K UHD, change the resolution in the C++ code to **3840 x 2160**.
+
+## Color Bars
+
+The generated image contains eight vertical color bars:
+
+1. White
+2. Yellow
+3. Cyan
+4. Green
+5. Magenta
+6. Red
+7. Blue
+8. Black
+
+## Output Files
+
+Depending on the selected resolution, the program creates one of the following files:
+
+```text
+CBAR720.bmp
+CBAR1080.bmp
+CBAR192.bmp
+```
+
+The BMP files use short filenames for compatibility with equipment that may use the 8.3 filename convention.
+
+## BMP Format
+
+The generated images use:
+
+- Windows BMP format
+- 24-bit RGB color
+- Uncompressed pixel data
+- BMP BGR pixel ordering
+- 4-byte row alignment
+
+## How to Run in Visual 
